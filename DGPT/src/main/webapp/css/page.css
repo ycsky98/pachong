@@ -1,0 +1,66 @@
+.inner{
+	padding: 30px 5%;
+}
+.banner_img{
+	width: 100%;
+}
+.banner_img .content{
+	background: rgba(0,191,255,0.4);
+	position: relative;
+	width: 30%;
+	min-height: 250px;
+	margin-left: 60%;
+	margin-top: -300px;
+	color: #fff;
+	text-align: center;
+}
+.banner_img .content h1{
+	font-size: 30px;
+}
+.banner_img .content label{
+	background: #ccc;
+	width: 100%;
+	height: 2px;
+	display: block;
+}
+.banner_img .content p{
+	line-height: 28px;
+	font-size: 20px;
+}
+.introduce,.teacher{
+	position: relative;
+	width: 100%;
+	margin: 50px auto;
+}
+.introduce h1,.teacher h1{
+	font-size: 35px;
+}
+.introduce h2{
+	font-size: 25px;
+}
+.introduce p{
+	font-size: 18px;
+	text-indent: 2em;
+}
+.introduce img{
+	position: absolute;
+	right: 50px;
+	top: 70px;
+	max-width: 268px;
+	max-height: 254px;
+}
+.introduce label,.teacher label{
+	background: #ccc;
+	width: 100%;
+	height: 1px;
+	display: block;
+}
+.teacher .teacher1 img{
+	width: 200px;
+	height: 250px;
+	float: left;
+}
+.teacher .teacher1 p{
+	line-height: 60px;
+	font-size: 35px;
+}

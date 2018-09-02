@@ -1,0 +1,203 @@
+/*最顶部*/
+header{
+	width: 100%;
+	padding:0 10%;
+	height: 30px;
+	line-height: 30px;
+	background-color: #1109A9;
+	color: #fff;
+}
+header .leftInfo{
+	float: left;
+}
+header .rightInfo{
+	float: right;
+}
+header .rightInfo span{
+	display: inline-block;
+	margin:0 5px;
+}
+header .rightInfo a{
+	color: #fff;
+}
+header .rightInfo a:hover{
+	color: rgb(111,233,233);
+}
+/*************/
+.logo_inner{
+	width: 100%;
+	padding:20px 10% 0 10%;
+	height: 100px;
+	background-color: rgb(247,247,247);
+}
+.logo_inner .logo{
+	float: left;
+}
+.logo_inner .logo i{
+	float: left;
+	font-size: 24px;
+	margin: 5px;
+}
+.logo_inner .logo span{
+	float: left;
+	font-weight: bold;
+	font-size: 24px;
+}
+.contact_box .contact_leftIcon>i{
+	font-size: 24px;
+	margin: 8px;
+}
+.contact_box .contact_rightInfo{
+	float: right;
+}
+.contact_box .contact_rightInfo p{
+	font-size: 12px;
+	line-height: 14px;
+	color: #ccc;
+}
+.contact_inner{
+	
+}
+/*汉堡按钮*/
+.menuBtn{
+	position: fixed;
+	right: 10%;
+	width: 30px;
+	height: 20px;
+	z-index: 10;
+	cursor: pointer;
+	opacity: .5;
+	display: none;
+}
+.menuBtn:before,.menuBtn:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	left: 0;
+	background-color: black;
+	transform-origin: 50% 0%;
+	transition: transform 0.2s;
+}
+.menuBtn:before{
+	top: 0;
+}
+.menuBtn:after{
+	bottom: 1px;
+}
+.menuBtn>i{
+	position: absolute;
+	top: 50%;
+	margin-top: -2px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	border-radius: 2px;
+	background-color: black;
+	transition: background-color 0.2s;
+}
+/*汉堡按钮交互*/
+.menuBtn:hover i{
+	background-color: transparent;
+}
+.menuBtn:hover:before {
+    transform: translateY(9px) rotate(45deg);
+}
+.menuBtn:hover:after {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/*banner*/
+.banner{
+	position: relative;
+}
+.banner nav{
+	padding: 0 5%;
+	position: absolute;
+	z-index: 2;
+	left: 5%;
+	width: 90%;
+	background-color: #fff;
+	box-shadow: 0px 0px 4px #ccc;
+	margin-top: -20px;
+	line-height: 40px;
+	height: 40px;
+}
+.banner nav .leftInfo {
+	color: #ccc;
+}
+.banner nav ul{
+	width: 100%;
+}
+.banner nav ul li{
+	display: inline-block;
+	margin: 0 7px;
+}
+.banner nav .rightInfo span{
+	display: inline-block;
+}
+/*********menu**********/
+.menu{
+	position: fixed;
+	width: 250px;
+	top: 80px;
+	right: 0;
+	background-color:#1b467b;
+	z-index: -1;
+	transform: translateY(10px);
+	opacity: 0;
+	transition: transform 0.35s,opacity 0.35s;
+}
+.menu ul{
+}
+.menu ul li{
+	display: block;
+}
+.menu ul li a{
+	font-size: 16px;
+	color: #fff;
+	display: block;
+	padding: 15px;
+	border-top: 1px solid #1b467b;
+	border-bottom: 1px solid #123764;
+}
+.menu ul li:hover{
+	background-color: #123764;
+}
+/*********media*********/
+@media (max-width: 800px){
+	/*汉堡按钮开启*/
+	.menuBtn{
+		display: block;
+	}
+	.banner nav{
+		display: none;
+	}
+	.logo_inner{
+		height: 60px;
+	}
+	.logo_inner .logo i{
+		font-size: 18px;
+	}
+	.logo_inner .logo span{
+		font-size: 18px;
+	}
+	.contact_inner .contact_box{
+		display: none;
+	}
+}
+@media (max-width: 600px){
+	/*登录注册*/
+	header{
+		padding: 0 5%;
+	}
+	header .rightInfo span{
+		font-size: 12px;
+		margin: 0 2px;
+	}
+}
+@media (max-width: 420px){
+	header{
+		padding: 0 2%;
+	}
+}

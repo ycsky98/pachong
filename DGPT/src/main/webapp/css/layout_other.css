@@ -1,0 +1,366 @@
+@media (min-width: 1280px){
+	/*师资信息*/
+	.teachers_inner{
+		padding: 30px 10% 60px 10%;
+	}
+}
+@media (max-width: 1197px){
+	/*实习情况*/
+	.fieldwork_info>h5{
+		font-size: 1.3em;
+	}
+	.fieldwork_item_li .fieldwork_info p{
+		font-size: 0.9em;
+	}
+}
+
+@media (max-width: 1170px){
+	/*获奖情况*/
+	.awards_inner{
+		padding: 30px 5%;
+	}
+	.awards_inner .spanInfo{
+		margin-left: 5%;
+	}
+	.awards_inner .nextInfo{
+		padding:0 5%;
+	}
+	/*校内实验室*/
+	.school_lib_item_mutual h3{
+		top: 20%;
+	}
+	.school_lib_item_mutual p{
+		top: 40%;
+	}
+	/*实习情况*/
+	.fieldwork_inner{
+		padding: 30px 10%;
+	}
+	/*毕业设计*/
+	.design_inner{
+		padding: 30px 5% 60px 5%;
+	}
+	.design_inner figure.design_item p{
+		font-size: 12px;
+	}
+}
+@media (max-width: 1111px){
+	/*实习情况*/
+	.fieldwork_info>h5{
+		font-size: 1.2em;
+	}
+	
+}
+@media (max-width: 1027px){
+	/*实习情况*/
+	.fieldwork_item_li .fieldwork_info>p{		
+		font-size: 0.9em;
+	}
+	.fieldwork_info>h5{
+		padding-top: 10%;
+		font-size: 1.1em;
+	}
+
+}
+@media (max-width: 983px){
+	/*实习情况*/
+	.fieldwork_info>h5{
+		font-size: 1.4em;
+	}
+	.fieldwork_item_li .fieldwork_info>p{		
+		font-size: 1em;
+	}
+}
+@media (max-width: 950px){
+	/*毕业设计*/
+	.design_inner .design_item{
+		width: 33.3%;
+	}
+}
+@media(max-width: 908px){
+	/*实习情况*/
+	.fieldwork_info>h5{
+		font-size: 1.3em;
+	}
+}
+@media(max-width: 900px){
+	/*简介*/
+	.abstract_inner .abstractItem{
+		width: 33.3%;
+		padding: 15px;
+	}
+	.abstract_inner .abstractItem>i{
+		font-size: 80px;
+	}
+	.abstract_inner .abstractInfo{
+		text-align: center;
+		padding: 10px 5%;
+	}
+	/*实习情况*/
+	.fieldwork_inner{
+		padding: 10px 5%;
+	}
+	.fieldwork_inner>.fieldwork_info{
+		padding: 20px 5%;
+	}
+	/*校内情况*/
+	.school_lib_inner{
+		padding: 30px 5% 60px 5%;
+	}
+	/*校外基地*/
+	.school_outside_inner{
+		padding: 30px 5% 60px 5%;
+	}
+	/*获奖证书*/
+	.awards_inner{
+		padding: 30px 5%;
+	}
+	
+}
+@media (max-width: 800px){
+	/*校内情况*/
+	.school_lib_inner{
+		padding: 30px 10% 60px 10%;
+	}
+	.school_lib_item{
+		width: 50%;
+	}
+	/*毕业设计*/
+	.design_inner .design_item{
+		width: 50%;
+	}
+	/*校外基地*/
+	.outside_item{
+		width:-webkit-calc(50% - 20px); 
+		width:-moz-calc(50% - 20px); 
+		width:calc(50% - 20px); 
+	}
+}
+@media (max-width: 767px){
+	/*师资信息*/
+	.teachers_inner{
+		padding: 30px 15% 60px 15%;
+	}
+	.teachers_item{
+		height: 315px;
+	}
+	.teachers_item h5{
+		font-size: 16px;
+	}
+	.teachers_item p{
+		font-size: 12px;
+		line-height: 25px;
+	}
+}
+@media (max-width: 745px){
+	/*实习情况*/
+	.fieldwork_info>h5{
+		font-size: 1.2em;
+	}
+}
+@media (max-width: 700px){
+
+}
+@media (max-width: 693px){
+	/*实习情况*/
+	.fieldwork_info>h5{
+		font-size: 1.1em;
+	}
+	.fieldwork_item_li .fieldwork_info>p{		
+		font-size: 0.8em;
+	}
+}
+@media (max-width: 650px){
+	/*师资信息*/
+	.teachers_inner{
+		padding: 30px 10% 60px 10%;
+	}
+	.teachers_item{
+		height: 300px;
+	}
+	/*校内情况*/
+	.school_lib_inner{
+		padding: 30px 5% 60px 5%;
+	}
+}
+@media (max-width: 633px){
+	/*实习情况*/
+	.fieldwork_info>h5{
+		font-size: 1.5em;
+	}
+	.fieldwork_item_li .fieldwork_info>p{		
+		font-size: 1em;
+	}
+}
+@media (max-width: 600px){
+	/*简介*/
+	.abstract_inner .abstractItem>i{
+		font-size: 65px;
+	}
+	.abstract_inner .abstractInfo{
+		padding: 5px 3%;
+	}
+	.abstract_inner .abstractInfo span{
+		font-size: 13px;
+	}
+	.abstract_inner .abstractItem{
+		width: 50%;
+	}	
+	.abstract_inner a:nth-child(4)>.abstractItem{
+		background-color: rgb(235,235,235);
+	}	
+	.abstract_inner a:nth-child(5)>.abstractItem{
+		background-color: #fff;
+	}		
+}
+@media (max-width: 570px){
+	/*实习情况*/
+	.fieldwork_item_li h5{
+		font-size: 1.3em;
+	}
+}
+@media (max-width: 566px){
+	/*师资信息*/
+	.teachers_inner{
+		padding: 30px 5% 60px 5%;
+	}
+}
+@media (max-width: 520px){
+	/*师资信息*/
+	.teachers_item{
+		height: 280px;
+	}	
+	/*意见反馈*/
+	.feedback form{
+		width: 90%;
+	}
+}
+@media (max-width: 500px){
+	/*师资信息*/
+	.teachers_item{
+		height: 270px;
+	}
+	/*校内情况*/
+	.school_lib_inner{
+		padding: 30px 10% 60px 10%;
+	}
+	.school_lib_item{
+		width: 100%;
+	}
+	/*实习情况*/
+	.fieldwork_inner .fieldwork_info .fl{
+		width: 100%;
+		text-align: center;
+	}
+	.fieldwork_inner .fieldwork_info .fr{
+		width: 100%;
+		height: 56px;
+		position: relative;
+	}
+	.fieldwork_inner .fieldwork_info .fr button{
+		position: absolute;
+		left: 50%;
+		margin-left: -72px;
+	}
+	.fieldwork_item_li h5{
+		font-size: 1.1em;
+	}
+	/*校外基地*/
+	.school_outside_inner{
+		padding: 30px 10% 60px 10%;
+	}
+	.outside_item{
+		margin: 0;
+		width:100%; 
+	}
+	/*毕业设计*/
+	.design_inner{
+		padding: 30px 10% 60px 10%;
+	}
+	.design_inner .design_item{
+		width: 100%;
+	}	
+	.school_lib_item:not(:first-child){display: none;}
+	.outside_item:not(:nth-child(3)){display: none;}
+	.design_item:not(:nth-child(3)){display: none;}
+}
+@media (max-width: 460px){
+	/*实习情况*/
+	.fieldwork_item_li .fieldwork_info>h5{
+		font-size: 1em;
+	}
+	.fieldwork_item_li .fieldwork_info>h6{
+		font-size: 0.9em;
+	}
+	.fieldwork_item_li .fieldwork_info>p{		
+		font-size: 0.9em;
+	}
+}
+@media (max-width: 440px){
+	/*师资信息*/
+	.teachers_inner{
+		padding: 30px 0% 60px 0%;
+	}
+	.teachers_inner .col-xs-6{
+		padding: 0 5px;
+	}	
+	/*校外基地*/
+	.school_outside_inner{
+		padding: 30px 10% 60px 10%;
+	}
+}
+@media (max-width: 405px){
+	/*实习情况*/
+	.fieldwork_item_li .fieldwork_info>h5{
+		font-size: 1.5em;
+	}
+	.fieldwork_item_li .fieldwork_info>h6{
+		font-size: 1.3em;
+	}
+	.fieldwork_item_li .fieldwork_info>p{		
+		font-size: 1.1em;
+	}	
+}
+@media (max-width:420px){
+	/*实习情况*/
+	.fieldwork_inner{
+		padding: 10px 10%;
+	}	
+}
+@media (max-width: 400px){
+	.teachers_inner{
+		padding: 10px 15% 60px 15%;
+	}
+	.teachers_item{
+		height:auto;
+	}
+	.teachers_inner .col-xs-6{
+		width: 100%;
+	}
+	.teachers_item:not(:nth-child(3)){display: none;}
+	/*获奖证书*/
+	.awards_inner{
+		padding: 30px 5%;
+	}
+}
+@media (max-width: 340px){
+	/*实习情况*/
+	.fieldwork_item_li .fieldwork_info>h5{
+		font-size: 1.3em;
+	}
+	.fieldwork_item_li .fieldwork_info>h6{
+		font-size: 1em;
+	}
+}
+@media (max-width: 285px){
+	/*实习情况*/
+	.fieldwork_item_li .fieldwork_info>h5{
+		font-size: 1em;
+	}
+	.fieldwork_item_li .fieldwork_info>h6{
+		font-size: 0.8em;
+	}
+	.fieldwork_item_li .fieldwork_info>p{
+		font-size: 0.8em;
+	}
+}

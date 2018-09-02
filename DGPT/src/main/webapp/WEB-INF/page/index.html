@@ -1,0 +1,650 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<title>DGPT</title>
+	<!--[if lt ie 9]> 
+		<script src='js/respond.min.js'></script>
+	    <script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/top.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/layout_other.css">
+	<link rel="stylesheet" href="lib/fancybox-master/dist/jquery.fancybox.min.css">
+</head>
+<body>
+	<!-- 菜单栏 -->
+	<div class="menu">
+		<ul>
+			<li><a href="index">首页<i class="fr fa fa-caret-right" aria-hidden="true"></i></a></li>
+			<li><a href="tinformation">师资团队<i class="fr fa fa-caret-right" aria-hidden="true"></i></a></li>
+			<li><a href="shixi">实习情况<i class="fr fa fa-caret-right" aria-hidden="true"></i></a></li>
+			<li><a href="#">校内实验室<i class="fr fa fa-caret-right" aria-hidden="true"></i></a></li>
+			<li><a href="#">校外基地<i class="fr fa fa-caret-right" aria-hidden="true"></i></a></li>
+			<li><a href="hj">获奖情况<i class="fr fa fa-caret-right" aria-hidden="true"></i></a></li>
+			<li><a href="graduation">毕业设计<i class="fr fa fa-caret-right" aria-hidden="true"></i></a></li>
+		</ul>
+	</div>
+	<!-- 顶部登录栏 -->
+	<header>
+		<div class="leftInfo">
+			<span>东莞职业技术学院</span>
+		</div>
+		<div class="rightInfo">
+			<span><a href="registered">注册</a></span>
+			<span><a href="login">登录</a></span>
+			<span><a href="update">我的信息</a></span>
+		</div>
+	</header>
+	<!-- banner上方logo和导航条 -->	
+	<div class="logo_inner">
+		<div class="logo">
+			<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+			<span>计算机应用技术</span>
+		</div>
+		<div class="menuBtn"><i></i></div>
+		<div class="contact_inner fr">
+			<div class="contact_box">
+				<div class="contact_leftIcon fl">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+				</div>
+				<div class="contact_rightInfo">
+					<p>座机电话：</p>
+					<span>076988888888</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- banner部分布局+菜单部分 -->
+	<section class="banner">
+		<nav>
+			<div class="leftInfo fl">
+				<ul>
+					<li><a href="index">首页</a></li>|
+					<li><a href="tinformation">师资团队</a></li>|
+					<li><a href="shixi">实习情况</a></li>|
+					<li><a href="#">校内实验室</a></li>|
+					<li><a href="#">校外基地</a></li>|
+					<li><a href="hj">获奖情况</a></li>|
+					<li><a href="graduation">毕业设计</a></li>
+				</ul>
+			</div>
+			<div class="rightInfo fr">
+				<span>联系方式：</span>
+				<i class="fa fa-weixin" aria-hidden="true"></i>
+				<i class="fa fa-weibo" aria-hidden="true"></i>
+			</div>
+		</nav>
+		<!-- 轮播图 -->
+		<div id="slider_wrapper">
+		    <div class="row">
+	            <div id="carouselMenu" class="carousel slide">
+	                <ol class="carousel-indicators">
+	                    <li data-target="#carouselMenu" data-slide-to="0" class="active"></li>
+	                    <li data-target="#carouselMenu" data-slide-to="1" ></li>
+	                    <li data-target="#carouselMenu" data-slide-to="2" ></li>
+	                    <li data-target="#carouselMenu" data-slide-to="3" ></li>
+	                </ol>
+	                <div class="carousel-inner">
+	                    <div class="item active"><img src="images/banner_1.jpg" alt=""/></div>
+	                    <div class="item"><img src="images/banner_5.jpg" alt=""/></div>
+	                    <div class="item"><img src="images/banner_3.jpg" alt=""/></div>
+	                    <div class="item"><img src="images/banner_4.jpg" alt=""/></div>
+	                </div>
+	                <a class="carouselontrol leftBtn" href="#carouselMenu" data-slide="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+	                <a class="carousel-control rightBtn" href="#carouselMenu" data-slide="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+	            </div>
+		    </div>
+		</div>
+	</section>
+	<!-- 简介 -->
+	<div class="abstract_inner fl">
+		<div class="abstractInfo">
+			<span>东莞市唯一一所公立高等职业院校，是广东省第三批示范性高等职业院校立项建设单位。</span>
+		</div>
+		<a href="#teachers">
+			<div class="abstractItem">
+				<i class="fa fa-users" aria-hidden="true"></i>
+				<p>师资团队</p>
+				<span>教职工610人，其中专任教师464人，高级职称114人，博士40人。</span>
+			</div>
+		</a>
+		<a href="#fieldwork">
+			<div class="abstractItem">
+				<i class="fa fa-briefcase" aria-hidden="true"></i>
+				<p>实习情况</p>
+				<span>定期与行业协会、商会联手,每次均有超过400家企业参加，提供近万个就业岗位。不定期组织各类小型专场招聘会。</span>
+			</div>
+		</a>
+		<a href="#school_lib">
+			<div class="abstractItem">
+				<i class="fa fa-building" aria-hidden="true"></i>
+				<p>校内实验室</p>
+				<span>学校占地面积930亩，校舍建筑面积33.95万平方米</span>
+			</div>
+		</a>
+		<a href="#school_outside">
+			<div class="abstractItem">
+				<i class="fa fa-building" aria-hidden="true"></i>
+				<p>校外基地</p>
+				<span>学院已与260多家企业建立校企合作伙伴关系，通过实施订单式培养、共建培训机构、建立“校中厂”和设立校内奖教奖学金等形式拓展合作空间。</span>
+			</div>
+		</a>
+		<a href="#getAwards">
+			<div class="abstractItem">
+				<i class="fa fa-trophy" aria-hidden="true"></i>
+				<p>获奖证书</p>
+				<span>拥有很多大赛奖项，如：省级奖项，市级奖项，院级奖项</span>
+			</div>
+		</a>
+		<a href="#design">
+			<div class="abstractItem">
+				<i class="fa fa-laptop" aria-hidden="true"></i>
+				<p>毕业设计</p>
+				<span>这里有历届师兄师姐优秀的毕业设计作品可供观看。</span>
+			</div>
+		</a>
+	</div>
+	<!-- 师资信息+饼图 -->
+	<div id="teachers" class="teachers_inner fl">
+		<span class="spanInfo">ABOUT US</span>
+		<h4>师资信息</h4>
+		<div class="col-sm-3 col-xs-6 teachers_item">
+			<canvas id="myChart_1" width="400" height="400"></canvas>
+			<h5>专任教师</h5>
+			<p>专任教师455人，校外兼职教师285人</p>
+		</div>
+		<div class="col-sm-3 col-xs-6 teachers_item">
+			<canvas id="myChart_2" width="400" height="400"></canvas>
+			<h5>硕士及以上</h5>
+			<p>硕士及以上学位教师占青年教师总数的90%以上</p>
+		</div>
+		<div class="col-sm-3 col-xs-6 teachers_item">
+			<canvas id="myChart_3" width="400" height="400"></canvas>
+			<h5>“双师”素质教师</h5>
+			<p>“双师”素质教师比例占专任教师总数的71.64%</p>
+		</div>
+		<div class="col-sm-3 col-xs-6 teachers_item">
+			<canvas id="myChart_4" width="400" height="400"></canvas>
+			<h5>企业经历</h5>
+			<p>专业教师中有行业企业经历的占50%以上</p>
+		</div>
+		<a href="tinformation.html"><button class="moreBtn">查看更多</button></a>
+	</div>
+	<!-- 实习情况 -->
+	<div id="fieldwork" class="fieldwork_inner fl">
+		<div class="fieldwork_info">
+			<div class="fl">
+				<span class="spanInfo">Practice situation</span>
+				<h4>实习情况</h4>
+			</div>
+			<div class="fr">
+				<a href="fieldwork.html"><button class="moreBtn">查看更多</button></a>
+			</div>
+		</div>
+		<div class="fieldwork_items">
+			<button class="fieldwork_prev"><</button>
+			<ul class="fieldwork_item_ul">
+				<li class="fieldwork_item_li">
+					<img src="images/t1.jpg" alt="">
+					<div class="fieldwork_info">
+						<h5>深圳腾讯计算机有限公司</h5>
+						<h6>Web前端开发工程师</h6>
+						<p>How all this mistaken idea of denouncing pleasure & praising pain was born and I will give you a completed.</p>
+						<a href="#">READMORE<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li class="fieldwork_item_li">
+					<img src="images/t2.jpg" alt="">
+					<div class="fieldwork_info">
+						<h5>深圳腾讯计算机有限公司</h5>
+						<h6>Web前端开发工程师</h6>
+						<p>How all this mistaken idea of denouncing pleasure & praising pain was born and I will give you a completed.</p>
+						<a href="#">READMORE<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li class="fieldwork_item_li">
+					<img src="images/t3.jpg" alt="">
+					<div class="fieldwork_info">
+						<h5>深圳腾讯计算机有限公司</h5>
+						<h6>Web前端开发工程师</h6>
+						<p>How all this mistaken idea of denouncing pleasure & praising pain was born and I will give you a completed.</p>
+						<a href="#">READMORE<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li class="fieldwork_item_li">
+					<img src="images/t4.jpg" alt="">
+					<div class="fieldwork_info">
+						<h5>深圳腾讯计算机有限公司</h5>
+						<h6>Web前端开发工程师</h6>
+						<p>How all this mistaken idea of denouncing pleasure & praising pain was born and I will give you a completed.</p>
+						<a href="#">READMORE<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li class="fieldwork_item_li">
+					<img src="images/t5.jpg" alt="">
+					<div class="fieldwork_info">
+						<h5>深圳腾讯计算机有限公司</h5>
+						<h6>Web前端开发工程师</h6>
+						<p>How all this mistaken idea of denouncing pleasure & praising pain was born and I will give you a completed.</p>
+						<a href="#">READMORE<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li class="fieldwork_item_li">
+					<img src="images/t6.jpg" alt="">
+					<div class="fieldwork_info">
+						<h5>深圳腾讯计算机有限公司</h5>
+						<h6>Web前端开发工程师</h6>
+						<p>How all this mistaken idea of denouncing pleasure & praising pain was born and I will give you a completed.</p>
+						<a href="#">READMORE<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li class="fieldwork_item_li">
+					<img src="images/t1.jpg" alt="">
+					<div class="fieldwork_info">
+						<h5>深圳腾讯计算机有限公司</h5>
+						<h6>Web前端开发工程师</h6>
+						<p>How all this mistaken idea of denouncing pleasure & praising pain was born and I will give you a completed.</p>
+						<a href="#">READMORE<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li class="fieldwork_item_li">
+					<img src="images/t2.jpg" alt="">
+					<div class="fieldwork_info">
+						<h5>深圳腾讯计算机有限公司</h5>
+						<h6>Web前端开发工程师</h6>
+						<p>How all this mistaken idea of denouncing pleasure & praising pain was born and I will give you a completed.</p>
+						<a href="#">READMORE<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li class="fieldwork_item_li">
+					<img src="images/t3.jpg" alt="">
+					<div class="fieldwork_info">
+						<h5>深圳腾讯计算机有限公司</h5>
+						<h6>Web前端开发工程师</h6>
+						<p>How all this mistaken idea of denouncing pleasure & praising pain was born and I will give you a completed.</p>
+						<a href="#">READMORE<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li class="fieldwork_item_li">
+					<img src="images/t4.jpg" alt="">
+					<div class="fieldwork_info">
+						<h5>深圳腾讯计算机有限公司</h5>
+						<h6>Web前端开发工程师</h6>
+						<p>How all this mistaken idea of denouncing pleasure & praising pain was born and I will give you a completed.</p>
+						<a href="#">READMORE<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li class="fieldwork_item_li">
+					<img src="images/t5.jpg" alt="">
+					<div class="fieldwork_info">
+						<h5>深圳腾讯计算机有限公司</h5>
+						<h6>Web前端开发工程师</h6>
+						<p>How all this mistaken idea of denouncing pleasure & praising pain was born and I will give you a completed.</p>
+						<a href="#">READMORE<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li class="fieldwork_item_li">
+					<img src="images/t6.jpg" alt="">
+					<div class="fieldwork_info">
+						<h5>深圳腾讯计算机有限公司</h5>
+						<h6>Web前端开发工程师</h6>
+						<p>How all this mistaken idea of denouncing pleasure & praising pain was born and I will give you a completed.</p>
+						<a href="#">READMORE<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+			</ul>
+			<button class="fieldwork_next">></button>
+		</div>
+	</div>
+	<!-- 校内实验室情况 -->
+	<div id="school_lib" class="school_lib_inner fl">
+		<span class="spanInfo ac">OUR SCHOOL</span>
+		<h4 class="ac">校内实验室</h4>
+		<div class="school_lib_item_box">
+			<div class="school_lib_item">
+				<a href="images/lib1.jpg" data-fancybox="school_lib_img" data-caption="校内实验室 #1">
+					<img src="images/lib1.jpg" alt="">
+					<div class="school_lib_item_mutual">
+						<h3>校内实验室</h3>
+						<p>实验室电脑50台（包括各种专业软件）、实验台50张，多媒体系统一套等</p>
+					</div>
+				</a>
+			</div>
+			<div class="school_lib_item">
+				<a href="images/lib2.jpg" data-fancybox="school_lib_img" data-caption="校内实验室 #2">
+					<img src="images/lib2.jpg" alt="">
+					<div class="school_lib_item_mutual">
+						<h3>校内实验室</h3>
+						<p>实验室电脑50台（包括各种专业软件）、实验台50张，多媒体系统一套等</p>
+					</div>
+				</a>
+			</div>
+			<div class="school_lib_item">
+				<a href="images/lib3.jpg" data-fancybox="school_lib_img" data-caption="校内实验室 #3">
+					<img src="images/lib3.jpg" alt="">
+					<div class="school_lib_item_mutual">
+						<h3>校内实验室</h3>
+						<p>实验室电脑50台（包括各种专业软件）、实验台50张，多媒体系统一套等</p>
+					</div>
+				</a>
+			</div>
+			<div class="school_lib_item">
+				<a href="images/lib4.jpg" data-fancybox="school_lib_img" data-caption="校内实验室 #4">
+					<img src="images/lib4.jpg" alt="">
+					<div class="school_lib_item_mutual">
+						<h3>校内实验室</h3>
+						<p>实验室电脑50台（包括各种专业软件）、实验台50张，多媒体系统一套等</p>
+					</div>
+				</a>
+			</div>
+			<div class="school_lib_item">
+				<a href="images/lib5.jpg" data-fancybox="school_lib_img" data-caption="校内实验室 #5">
+					<img src="images/lib5.jpg" alt="">
+					<div class="school_lib_item_mutual">
+						<h3>校内实验室</h3>
+						<p>实验室电脑50台（包括各种专业软件）、实验台50张，多媒体系统一套等</p>
+					</div>
+				</a>
+			</div>
+			<div class="school_lib_item">
+				<a href="images/lib6.jpg" data-fancybox="school_lib_img" data-caption="校内实验室 #6">
+					<img src="images/lib6.jpg" alt="">
+					<div class="school_lib_item_mutual">
+						<h3>校内实验室</h3>
+						<p>实验室电脑50台（包括各种专业软件）、实验台50张，多媒体系统一套等</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<a href="#"><button class="moreBtn">查看更多</button></a>
+	</div>
+	<!-- 校外基地 -->
+	<div id="school_outside" class="school_outside_inner fl">
+		<span class="spanInfo ac">OUR SCHOOL</span>
+		<h4 class="ac">校外基地</h4>
+		<div class="outside_item">
+			<h5>华勤通讯技术有限公司</h5>
+			<p>华勤通讯技术有限公司创建于2005年，是全球领先的多品类智能通讯终端研发设计公司（智能通讯终端ODM），产品涵盖智能手机，平板电脑，笔记本电脑，服务器及IoT产品。总部位于中国上海，并在西安，无锡，东莞，南昌，深圳，台湾，日本，香港，美国，印度设有研发中心，制造基地，运输中心和办事处。截止2017年，华勤拥有员工15000余人，其中职员4000余人（研发人员占65%)，拥有近2000项授权专利。</p>
+		</div>
+		<div class="outside_item">
+			<h5>深圳市金立通信技术有限公司</h5>
+			<p>金立通信技术力量雄厚且对技术的掌握有着长远的规划，是目前国内手机行业设计与研发最深最广的品牌之一。金立通信拥有两家独资加工工厂东莞市金众电子和东莞市金铭电子。总投资1.8亿元，拥有厂房面积60000多平方米，员工3000人，未来计划再投资7000万元，最终建成一个年产能800万部的高度自动化现代化手机专业生产基地。</p>
+		</div>
+		<div class="outside_item">
+			<h5>广东中科遥感技术有限公司</h5>
+			<p>广东中科遥感技术有限公司，挂靠在“中国科学院云计算产业技术创新与育成中心”。该中心由广东省与中国科学院联合建立，是直属于中科院领导的大型院地合作机构。作为我国第一个“遥感云服务研究中心”，广东中科遥感将基于中科院云计算资源，创新遥感云服务技术，开创遥感产业化的新模式。</p>
+		</div>
+		<div class="outside_item">
+			<h5>东莞市得心软件有限公司</h5>
+			<p>公司提供具有竞争力和公平性的薪酬福利；提供多层次的员工培养和职业规划方案；经常组织丰富多彩的员工活动等。持续发展的得心软件欢迎您，希望您在众多的竞争者中脱颖而出，成功加入得心软件，我们真诚的邀请优秀人才加盟我们的团队，共同创业、共同发展。</p>
+		</div>
+		<div class="outside_item">
+			<h5>东莞市百达连新电子商务有限公司</h5>
+			<p>东莞市百达连新电子商务有限公司，是一家以电商团队与人才的培训和输出为核心，以电商平台运营外包服务为基础的电商服务公司，致力于为电商企业量身打造各电商平台高能效运营团队与岗位人才。</p>
+		</div>
+		<div class="outside_item">
+			<h5>更多</h5>
+			<p>学院已与260多家企业建立校企合作伙伴关系，通过实施订单式培养、共建培训机构、建立“校中厂”和设立校内奖教奖学金等形式拓展合作空间。</p>
+		</div>
+		<a href="#"><button class="moreBtn">查看更多</button></a>			
+	</div>	
+	<!-- 获奖情况 -->
+	<div id="getAwards" class="awards_inner fl">
+		<span class="spanInfo">Award winning</span>
+		<div class="nextInfo">
+			<h4 class="fl">获奖情况</h4>
+			<div class="awards_btn_inner fr">
+				<button class="awards_prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+				<button class="awards_next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+			</div>
+		</div>
+		<div class="awardsItemBox">
+			<ul class="awards_item_ul">
+				<li class="awards_item_li">
+					<a href="images/awards1.jpg" data-fancybox="awards_img" data-caption="全国职业院校技能大赛高职组广东省选拔赛软件测试项目--三等奖 #1">
+						<img src="images/awards1.jpg" alt="">
+					</a>
+				    <div class="awards_caption">
+				    	<!-- 获奖情况介绍 -->
+				    	<div class="getAwardsInfo">
+							<h6>全国职业院校技能大赛</h6>
+							<p>全国职业院校技能大赛高职组广东省选拔赛软件测试项目--三等奖</p>
+				    	</div>
+				    </div>
+				</li>
+				<li class="awards_item_li">
+					<a href="images/awards2.jpg" data-fancybox="awards_img" data-caption="广东省第26届‘蓝盾高校杯’软件设计及信息安全竞赛--三等奖 #2">
+						<img src="images/awards2.jpg" alt="">
+					</a>	
+				    <div class="awards_caption">
+				    	<!-- 获奖情况介绍 -->
+				    	<div class="getAwardsInfo">
+							<h6>蓝盾高校杯</h6>
+							<p>广东省第26届‘蓝盾高校杯’软件设计及信息安全竞赛--三等奖</p>
+				    	</div>
+				    </div>
+				</li>
+				<li class="awards_item_li">
+					<a href="images/awards3.jpg" data-fancybox="awards_img" data-caption="全国职业院校技能大赛高职组广东省选拔赛大数据技术与应用项目--三等奖 #3">
+						<img src="images/awards3.jpg" alt="">
+					</a>	
+				    <div class="awards_caption">
+				    	<!-- 获奖情况介绍 -->
+				    	<div class="getAwardsInfo">
+							<h6>全国职业院校技能大赛</h6>
+							<p>全国职业院校技能大赛高职组广东省选拔赛大数据技术与应用项目--三等奖</p>
+				    	</div>
+				    </div>
+				</li>
+				<li class="awards_item_li">
+					<a href="images/awards4.jpg" data-fancybox="awards_img" data-caption="广东省普通高等学校大学生计算机设计大赛--一等奖 #4">
+						<img src="images/awards4.jpg" alt="">
+					</a>	
+				    <div class="awards_caption">
+				    	<!-- 获奖情况介绍 -->
+				    	<div class="getAwardsInfo">
+							<h6>大学生计算机设计大赛</h6>
+							<p>广东省普通高等学校大学生计算机设计大赛--一等奖</p>
+				    	</div>
+				    </div>
+				</li>
+				<li class="awards_item_li">
+					<a href="images/awards5.jpg" data-fancybox="awards_img" data-caption="广东省大学生计算机作赛暨泛珠三角+大学生计算机作品赛--一等奖 #5">
+						<img src="images/awards5.jpg" alt="">
+					</a>	
+				    <div class="awards_caption">
+				    	<!-- 获奖情况介绍 -->
+				    	<div class="getAwardsInfo">
+							<h6>中星杯</h6>
+							<p>广东省大学生计算机作赛暨泛珠三角+大学生计算机作品赛--一等奖</p>
+				    	</div>
+				    </div>
+				</li>
+				<li class="awards_item_li">
+					<a href="images/awards6.jpg" data-fancybox="awards_img" data-caption="2016广东省“中星杯”网络信息安全攻防大赛深圳、东莞区赛一等奖 #6">
+						<img src="images/awards6.jpg" alt="">
+					</a>	
+				    <div class="awards_caption">
+				    	<!-- 获奖情况介绍 -->
+				    	<div class="getAwardsInfo">
+							<h6>网络信息安全攻防大赛</h6>
+							<p>2016广东省“中星杯”网络信息安全攻防大赛深圳、东莞区赛一等奖</p>
+				    	</div>
+				    </div>
+				</li>
+				<li class="awards_item_li">
+					<a href="images/awards7.jpg" data-fancybox="awards_img" data-caption="2017“中兴杯”泛珠三角+大学生计算机作品赛总决赛——三等奖 #7">
+						<img src="images/awards7.jpg" alt="">
+					</a>	
+				    <div class="awards_caption">
+				    	<!-- 获奖情况介绍 -->
+				    	<div class="getAwardsInfo">
+							<h6>大学生计算机作品大赛</h6>
+							<p>2017“中兴杯”泛珠三角+大学生计算机作品赛总决赛——三等奖</p>
+				    	</div>
+				    </div>
+				</li>
+				<li class="awards_item_li">
+					<a href="images/awards8.jpg" data-fancybox="awards_img" data-caption="骆剑锋老师在学院第二届青年教师讲课大赛活动荣获一等奖 #8">
+						<img src="images/awards8.jpg" alt="">
+					</a>	
+				    <div class="awards_caption">
+				    	<!-- 获奖情况介绍 -->
+				    	<div class="getAwardsInfo">
+							<h6>青年教师讲课大赛</h6>
+							<p>骆剑锋老师在学院第二届青年教师讲课大赛活动荣获一等奖</p>
+				    	</div>
+				    </div>
+				</li>
+				<li class="awards_item_li">
+					<a href="images/awards9.jpg" data-fancybox="awards_img" data-caption="2016年广东职业学校创新创效创业大赛中获高职创业计划类二等奖 #9">
+						<img src="images/awards9.jpg" alt="">
+					</a>	
+				    <div class="awards_caption">
+				    	<!-- 获奖情况介绍 -->
+				    	<div class="getAwardsInfo">
+							<h6>挑战杯</h6>
+							<p>2016年广东职业学校创新创效创业大赛中获高职创业计划类二等奖</p>
+				    	</div>
+				    </div>
+				</li>
+				<li class="awards_item_li">
+					<a href="images/awards10.jpg" data-fancybox="awards_img" data-caption="2017年广东省计算机设计大赛中获一等奖 #10">
+						<img src="images/awards10.jpg" alt="">
+					</a>	
+				    <div class="awards_caption">
+				    	<!-- 获奖情况介绍 -->
+				    	<div class="getAwardsInfo">
+							<h6>计算机设计大赛</h6>
+							<p>2017年广东省计算机设计大赛中获一等奖</p>
+				    	</div>
+				    </div>
+				</li>
+				<li class="awards_item_li">
+					<a href="images/awards11.jpg" data-fancybox="awards_img" data-caption="2016年广东省技能大赛+2017广东省选拔赛云计算技术与应用项目--二等奖 #11">
+						<img src="images/awards11.jpg" alt="">
+					</a>	
+				    <div class="awards_caption">
+				    	<!-- 获奖情况介绍 -->
+				    	<div class="getAwardsInfo">
+							<h6>技能大赛</h6>
+							<p>2016年广东省技能大赛+2017广东省选拔赛云计算技术与应用项目--二等奖</p>
+				    	</div>
+				    </div>
+				</li>
+				<li class="awards_item_li">
+					<a href="images/awards12.jpg" data-fancybox="awards_img" data-caption="2016年广东省普通高等学校大学生计算机设计大赛中获一等奖 #12">
+						<img src="images/awards12.jpg" alt="">
+					</a>	
+				    <div class="awards_caption">
+				    	<!-- 获奖情况介绍 -->
+				    	<div class="getAwardsInfo">
+							<h6>大学生计算机设计大赛</h6>
+							<p>2016年广东省普通高等学校大学生计算机设计大赛中获一等奖</p>
+				    	</div>
+				    </div>
+				</li>
+			</ul>
+		</div>	
+		<a href="getAwards.html"><button class="moreBtn center-block">查看更多</button></a>
+	</div>
+	<!-- 毕业设计 -->
+	<div id="design" class="design_inner fl">
+		<span class="spanInfo ac">graduation project</span>
+		<h4 class="ac">毕业设计</h4>
+		<figure class="design_item">
+			<a href="images/1.png" data-fancybox="design_img" data-caption="微篮球 #1">
+				<img src="images/1.png" alt="">
+            	<figcaption>
+                	<h5>微篮球</h5>
+            	</figcaption>
+            </a>	
+		</figure>
+		<figure class="design_item">
+			<a href="images/2.png" data-fancybox="design_img" data-caption="矜贵玫瑰 #2">
+				<img src="images/2.png" alt="">
+            	<figcaption>
+                	<h5>矜贵玫瑰</h5>
+            	</figcaption>
+            </a>
+		</figure>
+		<figure class="design_item">
+			<a href="images/3.png" data-fancybox="design_img" data-caption="学院首页 #3">
+				<img src="images/3.png" alt="">
+            	<figcaption>
+                	<h5>学院首页</h5>
+            	</figcaption>
+            </a>
+		</figure>
+		<figure class="design_item">
+			<a href="images/4.png" data-fancybox="design_img" data-caption="图书分享网站 #4">
+				<img src="images/4.png" alt="">
+            	<figcaption>
+                	<h5>图书分享网站</h5>
+            	</figcaption>
+            </a>
+		</figure>
+		<figure class="design_item">
+			<a href="images/5.png" data-fancybox="design_img" data-caption="地理网站 #5">
+				<img src="images/5.png" alt="">
+            	<figcaption>
+                	<h5>地理网站</h5>
+            	</figcaption>
+            </a>
+		</figure>
+		<figure class="design_item">
+			<a href="images/6.png" data-fancybox="design_img" data-caption="解密星海网站 #6">
+				<img src="images/6.png" alt="">
+            	<figcaption>
+                	<h5>解密星海网站</h5>
+            	</figcaption>
+            </a>
+		</figure>
+		<figure class="design_item">
+			<a href="images/7.png" data-fancybox="design_img" data-caption="音乐网站 #7">
+				<img src="images/7.png" alt="">
+            	<figcaption>
+                	<h5>音乐网站</h5>
+            	</figcaption>
+            </a>	
+		</figure>
+		<figure class="design_item">
+			<a href="images/8.png" data-fancybox="design_img" data-caption="旅游网站 #8">
+				<img src="images/8.png" alt="">
+            	<figcaption>
+                	<h5>旅游网站</h5>
+            	</figcaption>
+            </a>
+		</figure>
+		<a href="graduation.html"><button class="moreBtn">查看更多</button></a>
+	</div>
+	<!-- 意见反馈 -->
+	<div class="feedback fl">
+		<span class="spanInfo ac">Give feedback</span>
+		<h4 class="ac">意见反馈</h4>
+		<div class="container">
+			<label for=""></label>
+			<form action="" method="">
+				<input type="text" placeholder="您的名字" value="">
+				<input type="email" placeholder="您的邮箱" value="">
+				<textarea name="" id="" cols="30" rows="10" placeholder="您要说的话"></textarea>
+				<button class="moreBtn center-block">提交</button>
+			</form>
+		</div>
+	</div>
+	<footer class="ac">copyright 陈龙辉 © 2018-2019</footer>
+	<div class="returnTop"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+	<script src='lib/jquery-3.3.1.min.js'></script>
+	<script src='lib/Chart.min.js'></script>
+	<script src='lib/bootstrap-3.3.7-dist/js/bootstrap.min.js'></script>
+	<script src='lib/fancybox-master/dist/jquery.fancybox.min.js'></script>
+	<script src="js/index.js"></script>
+	<script src='js/menu.js'></script>
+	<script src='js/returnTop.js'></script>
+</body>
+</html>

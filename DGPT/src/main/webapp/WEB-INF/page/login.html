@@ -1,0 +1,67 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <!--[if IE]>
+        <script src=”http://html5shiv.googlecode.com/svn/trunk/html5.js”></script>
+    < ![endif]-->
+    <!--页面初始化-->
+    <link rel="stylesheet" href="css/global.css">
+    <!--用户登录-->
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="login_box">
+        <h4>欢迎登录</h4>
+        <form class="loginForm" method="post">
+            <div class="login_item">
+                <div class="login_icon fl">
+                   <i class="fa fa-user-o" aria-hidden="true"></i>
+                </div>
+                <div class="login_input_box fl">
+                    <input id="username" type="text" placeholder="用户名" required pattern="^[1-9]{1}[0-9]{7}" oninvalid="setCustomValidity('用户名必须为8位数字')" oninput="setCustomValidity('')">
+                </div>
+                <div class="login_passIcon fr">
+                    <i class="glyphicon glyphicon-ok-circle"></i>
+                </div>
+            </div>
+            <div class="login_item">
+                <div class="login_icon fl">
+                   <i class="fa fa-shield" aria-hidden="true"></i>
+                </div>
+                <div class="login_input_box fl">
+                    <input id="pwd" type="password" placeholder="密码" required oninvalid="setCustomValidity('请输入密码')" oninput="setCustomValidity('')">
+                </div>
+                <div class="login_passIcon fr">
+                    <i class="glyphicon glyphicon-ok-circle"></i>
+                </div>
+            </div>
+            <div class="login_item">
+                <div class="login_icon fl">
+                   <i class="fa fa-indent" aria-hidden="true"></i>
+                </div>
+                <div class="login_input_box_yzm fl">
+                    <input id="code_input" type="text" placeholder="验证码" required autocomplete="off" pattern="[0-9a-zA-Z]{4}" oninvalid="setCustomValidity('验证码必须为4位字符')" oninput="setCustomValidity('')">
+                </div>
+                <div class="login_passIcon fl">
+                    <i class="glyphicon glyphicon-ok-circle"></i>
+                </div>
+                <div id="v_container" class="yzm fl"></div>
+            </div>
+            <button type="submit" class="login_item">登录</button>
+            <button class="login_item">还没有账号？</button>
+        </form>
+    </div>
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!--验证码-->
+    <script src="js/gVerify.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

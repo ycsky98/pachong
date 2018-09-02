@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+		<!-- mybatis控制台LOG输出 -->
+        <setting name="logImpl" value="LOG4J2" />
+    </settings>
+    <!-- 为映射文件的返回值设置别名 -->
+    <!-- <typeAliases>
+    	<typeAlias type="cn.tedu.ttms.product.entity.Team" alias="team"></typeAlias>
+    </typeAliases> -->
+    <!-- 别名方法2 -->
+     <!-- <typeAliases>
+    	<package name="cn.tedu.ttms.product.entity"/>
+    	<package name="cn.tedu.ttms.attachment.entity"/>
+     </typeAliases> -->
+</configuration>
