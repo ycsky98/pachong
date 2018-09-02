@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.dgtp.com.dao.AdminLoginDao">
-	
-	<select id="checkRole" parameterType="int" resultType="cn.dgtp.com.pojo.Role">
-		select r.* from login l,role r where l.id=#{username} and l.r_id=r.r_id;
-	</select>
-</mapper> 
